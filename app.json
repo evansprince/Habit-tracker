@@ -60,4 +60,17 @@
     },
     "owner": "evansprince"
   }
+  {
+  "expo": {
+    "name": "HabitTracker",
+    "slug": "habit-tracker",
+    ...
+    "extra": {
+      "eas": {
+        "projectId": "dff24dd4-ade1-46c1-9c5d-acded4b2304c"
+      }
+    }
+  }
+}
+
 }
