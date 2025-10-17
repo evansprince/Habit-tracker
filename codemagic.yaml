@@ -11,9 +11,6 @@ workflows:
         script: |
           npm install -g eas-cli
           npm install
-      - name: Login to EAS
-        script: |
-          echo $EXPO_TOKEN | eas login --token
       - name: Build Android app
         script: |
           eas build --platform android --non-interactive
