@@ -14,9 +14,6 @@ workflows:
       - name: Build Android app
         script: |
           eas build --platform android --non-interactive
-      - name: Build iOS app (optional, if needed)
-        script: |
-          eas build --platform ios --non-interactive
       - name: Publish to Expo
         script: |
           eas publish --non-interactive
