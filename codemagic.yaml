@@ -6,15 +6,14 @@ workflows:
       node: latest
     scripts:
       - name: Install dependencies
-        script: |
-          npm install
+        script: npm install
       - name: Build Android app
         script: |
-          npx expo export --platform android --output-dir dist
+          npm install -g eas-cli
+          eas build --platform android --profile preview --local --output build/
     artifacts:
-      - dist/android/**/*.apk
-      - dist/android/**/*.aab
-
+      - build/*.apk
+      - build/*.aab
     publishing:
       email:
         recipients:
