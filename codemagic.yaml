@@ -3,10 +3,7 @@ workflows:
     name: Build Expo Android App
     max_build_duration: 60
     environment:
-      vars:
-        EXPO_APP_NAME: "lesson01"
       node: latest
-      expo: latest
     scripts:
       - name: Install dependencies
         script: |
