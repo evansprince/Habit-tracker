@@ -12,7 +12,9 @@ workflows:
         script: |
           npx expo export --platform android --output-dir dist
     artifacts:
-      - dist/**/*.apk
+      - dist/android/**/*.apk
+      - dist/android/**/*.aab
+
     publishing:
       email:
         recipients:
