@@ -45,6 +45,19 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "dff24dd4-ade1-46c1-9c5d-acded4b2304c"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/dff24dd4-ade1-46c1-9c5d-acded4b2304c"
+    },
+    "owner": "evansprince"
   }
 }
