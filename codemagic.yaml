@@ -14,8 +14,5 @@ workflows:
       - name: Build Android app
         script: |
           eas build --platform android --non-interactive
-      - name: Publish to Expo
-        script: |
-          eas publish --non-interactive
     artifacts:
       - build/**/*
