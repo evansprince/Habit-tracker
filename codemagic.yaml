@@ -3,7 +3,7 @@ workflows:
     name: Build and Publish
     environment:
       vars:
-        EAS_TOKEN: ct64QMiPUY18PXAz_kqrdLvWMyr05pmyWN9TV0zx
+        EXPO_TOKEN: ct64QMiPUY18PXAz_kqrdLvWMyr05pmyWN9TV0zx
       node: latest
       flutter: stable
     scripts:
@@ -13,7 +13,7 @@ workflows:
           npm install
       - name: Login to EAS
         script: |
-          echo $EAS_TOKEN | eas login --token
+          echo $EXPO_TOKEN | eas login --token
       - name: Build Android app
         script: |
           eas build --platform android --non-interactive
